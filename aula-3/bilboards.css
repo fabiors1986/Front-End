@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.titulo {
+    background-color: #007BFF; /* Azul */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento abaixo da faixa */
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+thead th {
+    text-align: center; /* Centraliza o texto no cabeçalho */
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+}
+tr
+
+tr:nth-child(even) {
+    background-color: #271bce;
+}
+
+tr:hover {
+  scale: 1.05;
+}
+td img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 100px; /* Manter igual à largura */
+    border-radius: 30%; /* Faz a imagem ficar redonda */
+    object-fit: cover; /* Garante que a imagem preencha a área */
+}
+
+
