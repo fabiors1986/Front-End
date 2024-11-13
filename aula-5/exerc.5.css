@@ -1,0 +1,38 @@
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+div{
+    border: solid 1px red;
+     width: 30vw;
+    height: 20vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    border: solid 1px red;
+    width: 30vw;
+    height: 20vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100px;
+}
