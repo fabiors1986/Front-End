@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    height: 0;
+}
+
+
+.container{
+    margin: 0 auto;
+  min-height: 100vh;
+    display: flex;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    background-color: aquamarine;
+    padding: 20px;
+    font-weight: bold;
+    font-size: larger;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    background-color: blue;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: larger;
+}
