@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Texto do Elemento</title>
+</head>
+
+<body>
+    <!-- Elemento h2 com texto inicial -->
+    <h2 id="meuTexto">Este é o texto original.</h2>
+
+    <!-- Botão para alterar o texto -->
+    <button onclick="alterarTexto()">Alterar Texto</button>
+
+    <script>
+        // Função para alterar o texto do h2
+        function alterarTexto() {
+            // Seleciona o elemento h2 pelo id
+            document.getElementById("meuTexto").innerText = "Texto Alterado com Sucesso!";
+        }
+    </script>
+</body>
+
+</html>
