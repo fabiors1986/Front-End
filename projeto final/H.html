@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="C.css">
     <title>Portfólio</title>
+    <style>
+        .highlight {
+            color: red;
+            /* Destaque para o título */
+        }
+    </style>
 </head>
 
 <body>
@@ -15,10 +21,10 @@
         <h1>Meu Portfólio</h1>
         <nav>
             <ul>
-                <li><a href="#introducao">Introdução</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <li><a href="#introducao" class="nav-link">Introdução</a></li>
+            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            <li><a href="#projetos" class="nav-link">Projetos</a></li>
+            <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -59,6 +65,26 @@
     <footer>
         <p>&copy; 2024 Meu Portfólio</p>
     </footer>
+    <script>
+        // Seleciona todos os links no header
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                // Remove destaque de todos os h2
+                document.querySelectorAll('h2').forEach(h2 => {
+                    h2.classList.remove('highlight');
+                });
+
+                // Adiciona destaque ao h2 correspondente
+                const targetId = link.getAttribute('href').substring(1); // Obtém o ID sem o "#"
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.querySelector('h2').classList.add('highlight');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
